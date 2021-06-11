@@ -1,0 +1,7 @@
+allure-report/
+allure-results/
+**/*.feature.cs
+*.user
+.vs
+**/Debug/netcoreapp3.1/**
+**/obj/**
