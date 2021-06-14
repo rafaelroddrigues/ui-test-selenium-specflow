@@ -11,7 +11,8 @@ Cenário: Autentico no sistema com credenciais válidas
 		| Username      | Password     |
 		| standard_user | secret_sauce |
 	E me autentico no sistema
-	Entao o usuário aparece logado
+	Entao o menu do usuário está visível
+	E o usuário aparece logado
 
 Cenário: Tento autenticar no sistema com credenciais bloqueadas
 	Dado que acesso o site

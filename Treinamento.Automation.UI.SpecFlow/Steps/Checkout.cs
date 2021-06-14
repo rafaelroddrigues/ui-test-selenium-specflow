@@ -57,7 +57,7 @@ namespace Treinamento.Automation.UI.SpecFlow.Steps
         [Then(@"a página de pedido completo é exibida contendo a mensagem (.+)")]
         public void EntaoAPaginaDePedidoCompletoEExibida(string texto)
         {
-            Assert.That(checkoutComplete.getThankYouForYourOrder().Equals(texto));
+            Assert.That(checkoutComplete.getThankYouForYourOrder(), Is.EqualTo(texto));
         }
 
     }

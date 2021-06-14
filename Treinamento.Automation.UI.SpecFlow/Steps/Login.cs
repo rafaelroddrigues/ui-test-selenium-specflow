@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System.Threading;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using Treinamento.Automation.UI.SpecFlow.Drivers;
@@ -39,17 +40,24 @@ namespace Treinamento.Automation.UI.SpecFlow.Steps
             loginPage.loginClick();
         }
 
+        [Then(@"o menu do usuário está visível")]
+        public void EntaoOMenuDoUsuarioEstaVisivel()
+        {
+            inventoryPage.menuClick();
+            Assert.That(inventoryPage.isMenuWindowVisible(), Is.EqualTo(true));
+        }
+
         [Then(@"o usuário aparece logado")]
         public void EntaoOUsuarioApareceLogado()
         {
-            inventoryPage.menuClick();
-            Assert.That(inventoryPage.islogoutExist(), Is.True);
+            Thread.Sleep(1000);
+            Assert.That(inventoryPage.islogoutExist(), Is.EqualTo(true));
         }
 
         [Then(@"um erro aparece informando que o usuário está bloqueado")]
         public void EntaoUmErroApareceInformandoQueOUsuarioEstaBloqueado()
         {
-            Assert.That(loginPage.getErrorMsg(), Is.EqualTo("Epic sadface: Sorry, this user has been locked out.").After(5000,1000));
+            Assert.That(loginPage.getErrorMsg(), Is.EqualTo("Epic sadface: Sorry, this user has been locked out."));
         }
 
     }

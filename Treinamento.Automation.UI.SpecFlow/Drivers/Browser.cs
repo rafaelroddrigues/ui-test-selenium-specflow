@@ -22,7 +22,7 @@ namespace Treinamento.Automation.UI.SpecFlow.Drivers
                     wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
                     driver.Manage().Window.Minimize();
                     driver.Manage().Window.Maximize();
-                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+                    driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
                     driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(60);
                 }
                 catch (Exception e)
