@@ -30,6 +30,16 @@ Esta extensão permite visualizar os testes, entretanto se os testes não forem 
 ```
 - De acordo com esta [issue](https://github.com/formulahendry/vscode-dotnet-test-explorer/issues/77) será necessário deletar o diretório correspondente à linguagem padrão que está sendo usada pela SDK, localizado em "dotnet-install-directory/sdk/sdk-version".
 
+### Webdriver Manager
+
+**Requerimentos**
+- [Node.js](https://nodejs.org/en/)
+
+Instale o Webdriver Manager para resolver possíveis incompatibilidades entre o webdriver e a versão do browser.
+```
+$ npm install -g webdriver-manager
+```
+
 #### Instale Scoop (utilitário para instalar programas pela linha de comando)
 
 **Requerimentos**
@@ -41,30 +51,6 @@ $ set-executionpolicy unrestricted -s cu
 ```
 ```
 $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
-```
-
-#### Git
-
-Instale o Git para conseguir clonar o projeto para sua máquina.
-```
-$ scoop install git
-```
-
-### Clone
-
-Clone o projeto.
-```
-$ git clone TODO
-```
-
-### Webdriver Manager
-
-**Requerimentos**
-- [Node.js](https://nodejs.org/en/)
-
-Instale o Webdriver Manager para resolver possíveis incompatibilidades entre o webdriver e a versão do browser.
-```
-$ npm install -g webdriver-manager
 ```
 
 ### Allure Report
