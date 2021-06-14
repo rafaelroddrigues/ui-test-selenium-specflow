@@ -1,9 +1,12 @@
-# Automation Frontend Tests - SpecFlow Selenium
+# Automation Frontend Tests - SpecFlow NUnit Selenium
 
-O objetivo deste projeto é fornecer um bom ponto de partida para quem procura usar SpecFlow e Selenium com C# na plataforma .NET Core 3.1, demonstrando os resultados com o framework Allure Report. Também procura demonstrar uma estrutura utilizando o padrão PageObject.
+ O objetivo deste projeto é fornecer um bom ponto de partida para quem procura usar SpecFlow, NUnit e Selenium com C# na plataforma .NET Core 3.1, demonstrando os resultados com o framework Allure Report. Também procura demonstrar uma estrutura utilizando o padrão PageObject.
 
 **Referências**
+- [.NET](https://docs.microsoft.com/pt-br/dotnet/core/introduction)
+- [C#](https://docs.microsoft.com/pt-br/dotnet/csharp/)
 - [Selenium](http://www.seleniumhq.org/)
+- [NUnit](https://nunit.org/)
 - [SpecFlow](http://specflow.org/)
 - [Allure](https://docs.qameta.io/allure/)
 - [Webdriver Manager](https://www.npmjs.com/package/webdriver-manager)
