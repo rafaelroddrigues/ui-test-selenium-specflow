@@ -19,14 +19,16 @@ Download e instale a extensão [SpecFlow for Visual Studio 2019](https://marketp
 #### Visual Studio Code - Extension
 
 Download e instale a extensão [.NET Core Test Explorer](https://marketplace.visualstudio.com/items?itemName=formulahendry.dotnet-test-explorer) na sua IDE.
-Esta extensão permite visualizar os testes, para isso crie o arquivo *.vscode/settings.json*, com o seguinte conteúdo.
+Esta extensão permite visualizar os testes, entretanto se os testes não forem exibidos no Test Explorer, execute os seguintes passos:
+
+- Crie o arquivo *.vscode/settings.json*, com o seguinte conteúdo.
 
 ```
 {
     "dotnet-test-explorer.testProjectPath": "**/*(nome do diretório onde está seu projeto).csproj"
 }
 ```
-Se os testes não forem exibidos no Test Explorer, de acordo com esta [issue](https://github.com/formulahendry/vscode-dotnet-test-explorer/issues/77) será necessário deletar o diretório correspondente à linguagem padrão que está sendo usada pela SDK, localizado em "dotnet-install-directory/sdk/sdk-version".
+- De acordo com esta [issue](https://github.com/formulahendry/vscode-dotnet-test-explorer/issues/77) será necessário deletar o diretório correspondente à linguagem padrão que está sendo usada pela SDK, localizado em "dotnet-install-directory/sdk/sdk-version".
 
 #### Instale Scoop (utilitário para instalar programas pela linha de comando)
 
