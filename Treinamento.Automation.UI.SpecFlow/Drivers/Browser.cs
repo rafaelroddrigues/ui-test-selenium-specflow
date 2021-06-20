@@ -19,7 +19,6 @@ namespace Treinamento.Automation.UI.SpecFlow.Drivers
                 {
                     ChromeOptions options = new ChromeOptions();
                     driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), options);
-                    wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
                     driver.Manage().Window.Minimize();
                     driver.Manage().Window.Maximize();
                     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);

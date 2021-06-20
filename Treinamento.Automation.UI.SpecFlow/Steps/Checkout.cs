@@ -21,6 +21,7 @@ namespace Treinamento.Automation.UI.SpecFlow.Steps
         public void QuandoAdicionoOProduto(string produto)
         {
             inventoryPage.getProduto(produto);
+            inventoryItemPage.addToCartClick(produto);
         }
 
         [When(@"visualizo o carrinho")]
