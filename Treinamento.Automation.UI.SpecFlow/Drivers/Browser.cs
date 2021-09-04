@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace Treinamento.Automation.UI.SpecFlow.Drivers
@@ -9,7 +8,6 @@ namespace Treinamento.Automation.UI.SpecFlow.Drivers
     public class Browser
     {
         public static IWebDriver driver;
-        public static WebDriverWait wait;
 
         public static IWebDriver getCurrentDriver()
         {
