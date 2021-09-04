@@ -1,7 +1,7 @@
 ﻿#language: pt-br
 Funcionalidade: Inventory
 
-Esquema do Cenário: Verificar preço unitário dos produtos
+Cenário: Verificar preço unitário dos produtos
 	Dado que acesso o site
 	Quando informo as seguintes credenciais
 		| Username      | Password     |

@@ -14,7 +14,5 @@ namespace Treinamento.Automation.UI.SpecFlow.Pages
         public bool islogoutExist() => logoutLnk.Displayed;
         public void getProduto(string produto) => driver.FindElement(By.XPath("//*[text()='" + produto + "']")).Click();
         public string getProdutoPreco(string produto) => driver.FindElement(By.XPath("//*[text()='" + produto + "']/parent::a/../../div/div[@class='inventory_item_price']")).Text;
-
-        
     }
 }
